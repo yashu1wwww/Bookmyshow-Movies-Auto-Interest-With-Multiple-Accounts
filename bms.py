@@ -19,6 +19,7 @@ input=driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/di
 
 time.sleep(2)
 
+#How Much Time You Want To Hit Interest Button That's Time Copy The Paste Again And Again Below And Replace Mail👍
 
 
 
