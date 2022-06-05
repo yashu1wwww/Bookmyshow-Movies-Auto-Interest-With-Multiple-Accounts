@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/bengaluru/movies/kranti/ET00323056")
+driver.get("https://in.bookmyshow.com/bengaluru/movies/kranti/ET00323056") #Replace Which Movie You Want To automate Put That Link Here
 
 input=driver.find_element_by_xpath('//*[@id="wzrk-confirm"]').click()
 
