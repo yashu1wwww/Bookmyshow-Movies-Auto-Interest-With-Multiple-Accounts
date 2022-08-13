@@ -5,3 +5,23 @@ in bms file replace 5th line with you which movie you want to automate paste the
 open cmd and enter bms.py or bms
 
 👉Video-https://youtu.be/HIR3iNS0AL4
+
+👉Note:-
+
+👉if your selenium version is in latest version then 
+the code never run 
+
+👉open cmd and enter pip uninstall selenium
+
+And enter 
+
+pip install selenium==4.2.1
+or
+pip install selenium==4.2.0
+
+and hit enter 
+
+and 
+
+python -c "import selenium; print(selenium.__version__)"
+<to check the current version of selenium>
