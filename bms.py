@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/bengaluru/movies/kranti/ET00323056") 
+driver.get("https://in.bookmyshow.com/bengaluru/movies/adipurush/ET00137196") #Change To Your Required Movie Url
 
 time.sleep(5)
 
