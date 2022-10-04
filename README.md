@@ -5,8 +5,6 @@ in bms file replace 5th line with you which movie you want to automate paste the
 
 open cmd on that particular folder and enter bms.py or click on bms.py file it take automatic process...
 
-👉Video-https://youtu.be/HIR3iNS0AL4
-
 👉Note:-
 
 👉if your selenium version is in latest version then 
