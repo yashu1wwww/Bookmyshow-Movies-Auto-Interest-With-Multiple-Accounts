@@ -22,9 +22,6 @@ time.sleep(15)
 
 driver.close()
 
-from selenium import webdriver
-import time
-
 driver = webdriver.Chrome()
 driver.get("https://in.bookmyshow.com/bengaluru/movies/adipurush/ET00137196") 
 
@@ -46,8 +43,6 @@ time.sleep(15)
 
 driver.close()
 
-from selenium import webdriver
-import time
 
 driver = webdriver.Chrome()
 driver.get("https://in.bookmyshow.com/bengaluru/movies/adipurush/ET00137196")
