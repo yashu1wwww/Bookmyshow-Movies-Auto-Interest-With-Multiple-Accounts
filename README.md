@@ -1,8 +1,11 @@
+
 Bookmyshow auto interest with multiple mails using selenium with python
+
+𝐈𝐟 𝐘𝐨𝐮 𝐅𝐚𝐧 𝐎𝐟 𝐓𝐡𝐚𝐭 𝐌𝐨𝐯𝐢𝐞 𝐀𝐧𝐝 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
 
 #replace with your dot mails in inter.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use these for dot gmails enter your gmail and press generate button.....
 
-https://generator.email/blog/gmail-generator
+https://generator.email/blog/gma
 
 #replace your movie url in 44 line (select location in bms) after copy the which movie you want to put automatic interest for below codes select these line and click ctrl+h button and it ask replace with then paste the line and click replace all button then below codes url will be changed...
 
