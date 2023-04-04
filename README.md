@@ -5,11 +5,39 @@ Bookmyshow auto interest with multiple mails using selenium with python
 
 #replace with your dot mails in inter.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use these for dot gmails enter your gmail and press generate button.....
 
-https://generator.email/blog/gma
+https://generator.email/
+
+𝙏𝙚𝙢𝙥 𝙈𝙖𝙞𝙡𝙨📧
+
+https://temp-mail.org/
+
+https://mail.tm/en/
+
+https://www.emailondeck.com/
+
+https://www.fakemail.net/
+
+https://tempail.com/
+
+https://www.mohmal.com/en/inbox
+
+10minutemail.com
+
+Mailnator
+
+E4ward
+
+Guerrilla Mail
+
+ThrowAwayMail
+
+GetNada
+
+YOPmail
 
 #replace your movie url in 44 line (select location in bms) after copy the which movie you want to put automatic interest for below codes select these line and click ctrl+h button and it ask replace with then paste the line and click replace all button then below codes url will be changed...
 
-after replacing dot mails and url all process go automatic you only enter the otp in 11 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
+after replacing dot mails and url all process go automatic you only enter the otp in 18 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
 
 Download The Latest Version Of Chrome Driver https://chromedriver.chromium.org/ & Extract The File And Place To These Folder open cmd on that particular folder and enter inter or double click on inter.py or you can rename the file and run....
 
