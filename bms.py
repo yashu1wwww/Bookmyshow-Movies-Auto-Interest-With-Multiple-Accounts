@@ -5,7 +5,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import random
 
-#replace with your 15 dot mails of one gmails(dont use personal gmails) from below 15 and another 15 dot mails of another gmails here remaining all goes automatic process you only enter the otp in 11 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
+#replace with your 18 dot mails of one gmails(dont use personal gmails) from below 18 and another 18 dot mails of another gmails here remaining all goes automatic process you only enter the otp in 11 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
 
 a=['yashwanth6677+nash@gmail.com']
 b=['ya.s.hw.anth.6.6.77@gmail.com'] 
@@ -23,7 +23,7 @@ m=['yashwanth6677+max@gmail.com']
 n=['y.ash.w.ant.h.6.677@gmail.com']
 o=['yashwanth6677+lita@gmail.com']
 
-#here i added another id 15 dot mails
+#here i added another id 18 dot mails
 
 p=['yashwanth6666+ginny@gmail.com']
 q=['yashwanth6666+timmy@gmail.com']
@@ -41,7 +41,7 @@ cc=['yashwanth6666+stan@gmail.com']
 dd=['yashwanth6666+kaye@gmail.com']
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") #replace your movie url (select location in bms) after copy the which movie you want to put automatic interest for below url lines select these line and  click ctrl+h button and it ask replace with then paste the line and click replace all button then below codes url will be changed... 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") #replace your movie url (select location in bms) after copy the which movie you want to put automatic interest for below url lines select these line and  click ctrl+h button and it ask replace with then paste the line and click replace all button then below codes url will be changed... 
 
 time.sleep(2)
 
@@ -57,7 +57,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -68,7 +68,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -84,7 +84,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(b))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -95,7 +95,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -111,7 +111,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(c))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -122,7 +122,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -138,7 +138,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(d))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -149,7 +149,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -165,7 +165,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(e))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -176,7 +176,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -192,7 +192,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(f))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -203,7 +203,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -219,7 +219,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(g))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -230,7 +230,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -246,7 +246,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(h))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -257,7 +257,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -273,7 +273,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(i))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -284,7 +284,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -300,7 +300,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(j))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -311,7 +311,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -327,7 +327,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(k))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -338,7 +338,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -354,7 +354,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(l))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -365,7 +365,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -381,7 +381,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(m))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -392,7 +392,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -408,7 +408,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(n))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -419,7 +419,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -435,7 +435,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(o))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -446,7 +446,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -462,7 +462,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(p))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -473,7 +473,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -489,7 +489,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(q))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -500,7 +500,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -516,7 +516,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(r))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -527,7 +527,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -543,7 +543,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(s))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -554,7 +554,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -570,7 +570,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(t))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -581,7 +581,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -597,7 +597,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(u))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -608,7 +608,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -624,7 +624,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(v))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -635,7 +635,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -651,7 +651,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(w))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -662,7 +662,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -678,7 +678,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(x))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -689,7 +689,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -705,7 +705,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(y))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
@@ -716,7 +716,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -732,7 +732,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(z))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -743,7 +743,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -759,7 +759,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(aa))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -770,7 +770,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -786,7 +786,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(bb))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -797,7 +797,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -813,7 +813,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(cc))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15) 
+time.sleep(18) 
 
 driver.maximize_window()
 
@@ -824,7 +824,7 @@ time.sleep(1)
 driver.close()
 
 driver = webdriver.Chrome()
-driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00332034") 
+driver.get("https://in.bookmyshow.com/chennai/movies/varisu/ET00331834") 
 
 time.sleep(2)
 
@@ -840,7 +840,7 @@ driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(dd))
 
 driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
 
-time.sleep(15)
+time.sleep(18)
 
 driver.maximize_window()
 
