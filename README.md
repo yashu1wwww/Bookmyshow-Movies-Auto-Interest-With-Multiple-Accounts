@@ -41,6 +41,8 @@ after replacing dot mails and url all process go automatic you only enter the ot
 
 Download The Latest Version Of Chrome Driver https://chromedriver.chromium.org/ & Extract The File And Place To These Folder open cmd on that particular folder and enter inter or double click on inter.py or you can rename the file and run....
 
+👉𝙏𝙤 𝙗𝙮𝙥𝙖𝙨𝙨 𝘾𝙝𝙧𝙤𝙢𝙚𝘿𝙧𝙞𝙫𝙚𝙧, 𝙮𝙤𝙪 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙖 𝙋𝙮𝙩𝙝𝙤𝙣 𝙨𝙘𝙧𝙞𝙥𝙩 𝙘𝙖𝙡𝙡𝙚𝙙 '𝙞𝙢.𝙥𝙮' 𝙖𝙣𝙙 𝙧𝙚𝙥𝙡𝙖𝙘𝙚 𝙩𝙝𝙚 𝙐𝙍𝙇 𝙖𝙣𝙙 𝙚𝙢𝙖𝙞𝙡 𝙫𝙖𝙧𝙞𝙖𝙗𝙡𝙚𝙨 𝙖𝙘𝙘𝙤𝙧𝙙𝙞𝙣𝙜𝙡𝙮.
+
 👉Note:-
 
 👉if your selenium version is in latest version then the code never run
