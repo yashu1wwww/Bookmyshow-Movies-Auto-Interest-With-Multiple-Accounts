@@ -1,9 +1,9 @@
 
-Bookmyshow auto interest with multiple mails using selenium with python
+Automate BookMyShow interests with multiple emails using Selenium with Python.
 
 𝐈𝐟 𝐘𝐨𝐮 𝐅𝐚𝐧 𝐎𝐟 𝐓𝐡𝐚𝐭 𝐌𝐨𝐯𝐢𝐞 𝐀𝐧𝐝 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
 
-#replace with your dot mails in inter.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use these for dot gmails enter your gmail and press generate button.....
+#Replace the placeholder text with your own dot emails in the 'inter.py' file. Add 15 dot emails from one Gmail account and another 15 from a different Gmail account. To create dot emails, enter your Gmail address and press the 'Generate' button
 
 https://generator.email/
 
@@ -43,7 +43,7 @@ To run the program, download the latest version of Chrome Driver from https://ch
 
 👉Note:-
 
-👉if your selenium version is in latest version then the code never run
+👉If you have the latest version of Selenium, the code may not run
 
 👉open cmd and enter pip uninstall selenium
 
