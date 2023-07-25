@@ -39,6 +39,8 @@ Replace the movie URL on line 44 with the one from the location you selected in 
 
 To run the program, download the latest version of Chrome Driver from https://chromedriver.chromium.org/ and extract the file to a specific folder. Open the command prompt in that folder and enter 'inter' or double-click on 'inter.py'. Alternatively, you can rename the file and run it."
 
+## "If you know how to automate OTP entry, then fork it."
+
 👉𝙏𝙤 𝙗𝙮𝙥𝙖𝙨𝙨 𝘾𝙝𝙧𝙤𝙢𝙚𝘿𝙧𝙞𝙫𝙚𝙧, 𝙮𝙤𝙪 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙖 𝙋𝙮𝙩𝙝𝙤𝙣 𝙨𝙘𝙧𝙞𝙥𝙩 𝙘𝙖𝙡𝙡𝙚𝙙 '𝙞𝙢.𝙥𝙮' 𝙖𝙣𝙙 𝙧𝙚𝙥𝙡𝙖𝙘𝙚 𝙩𝙝𝙚 𝙐𝙍𝙇 𝙖𝙣𝙙 𝙚𝙢𝙖𝙞𝙡 𝙫𝙖𝙧𝙞𝙖𝙗𝙡𝙚𝙨 𝙖𝙘𝙘𝙤𝙧𝙙𝙞𝙣𝙜𝙡𝙮.
 
 👉Note:-
