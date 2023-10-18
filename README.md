@@ -4,6 +4,7 @@ Automate BookMyShow interests with multiple accounts using Selenium with Python.
 𝐈𝐟 𝐘𝐨𝐮 𝐅𝐚𝐧 𝐎𝐟 𝐓𝐡𝐚𝐭 𝐌𝐨𝐯𝐢𝐞 𝐀𝐧𝐝 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
 
 #Replace the placeholder text with your own dot emails in the 'im.py' file. 
+
 (Add 15 dot emails from one Gmail account and another 15 from a different Gmail account. To create dot emails, enter your Gmail address and press the 'Generate' button.)
 
 ## Replace the movie URL on line 51 with the one from the location you selected in BookMyShow and do same in below code also where url asked...
@@ -14,15 +15,17 @@ To run the program, download the latest version of Chrome Driver from https://ch
 
 Open the command prompt in that folder and
 
-## enter im.py. Alternatively, you can rename the file and run it."
+## enter in cmd undetected_chromedriver
 
-## To By Chrome enter in cmd undetected_chromedriver
+## enter im.py. Alternatively, you can rename the file and run it."
 
 👉Note:-
 
 👉If you have the latest version of Selenium, the code may not run
 
-👉open cmd and enter pip uninstall selenium
+👉open cmd and enter 
+
+pip uninstall selenium
 
 And enter
 
