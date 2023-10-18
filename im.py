@@ -48,7 +48,7 @@ dd=['yashwanth6666+kaye@gmail.com']
 
 driver = uc.Chrome(use_subprocess=True)
 wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078") #select the city in bms and copy the movie url and do same replacement of url in below also..
 
 time.sleep(5)
 
