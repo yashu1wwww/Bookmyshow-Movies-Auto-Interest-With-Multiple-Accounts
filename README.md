@@ -3,13 +3,18 @@ Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
 𝐈𝐟 𝐘𝐨𝐮 𝐅𝐚𝐧 𝐎𝐟 𝐓𝐡𝐚𝐭 𝐌𝐨𝐯𝐢𝐞 𝐀𝐧𝐝 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
 
-#Replace the placeholder text with your own dot emails in the 'inter.py' file. Add 15 dot emails from one Gmail account and another 15 from a different Gmail account. To create dot emails, enter your Gmail address and press the 'Generate' button
+#Replace the placeholder text with your own dot emails in the 'im.py' file. 
+(Add 15 dot emails from one Gmail account and another 15 from a different Gmail account. To create dot emails, enter your Gmail address and press the 'Generate' button.)
 
-Replace the movie URL on line 44 with the one from the location you selected in BookMyShow.
-After copying the URL for the movie you want to add to your automatic interests, select the lines below and press 'Ctrl+H'. It will prompt you to replace the selected text, paste the copied URL and click on 'Replace All'. After replacing the email and URL, the entire process will be automated. You only need to enter the OTP within 18 seconds (use your mobile phone for faster entry of OTP).
+## Replace the movie URL on line 44 with the one from the location you selected in BookMyShow.
+
+## After copying the URL for the movie you want to add to your automatic interests, select the lines below and press 'Ctrl+H'.
+
+## It will prompt you to replace the selected text, paste the copied URL and click on 'Replace All'. After replacing the email and URL, the entire process will be automated. You only need to enter the OTP within 18 seconds (use your mobile phone for faster entry of OTP).
 
 To run the program, download the latest version of Chrome Driver from https://chromedriver.chromium.org/ and extract the file to a specific folder.
-Open the command prompt in that folder and enter 'inter' or double-click on 'inter.py'. Alternatively, you can rename the file and run it."
+
+Open the command prompt in that folder and enter 'inter' or double-click on 'im.py'. Alternatively, you can rename the file and run it."
 
 ## "If you know how to automate OTP entry, then fork it."
 
