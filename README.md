@@ -13,6 +13,8 @@ Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
 To run the program, download the latest version of Chrome Driver from https://chromedriver.chromium.org/ and extract the file to a specific folder.
 
+# 👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
+
 Open the command prompt in that folder and
 
 ## enter in cmd undetected_chromedriver
