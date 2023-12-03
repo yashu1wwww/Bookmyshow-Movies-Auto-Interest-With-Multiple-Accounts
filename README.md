@@ -52,8 +52,6 @@ https://temp-mail.org/
 
 https://mail.tm/en/
 
-https://www.emailondeck.com/
-
 https://www.fakemail.net/
 
 https://tempail.com/
