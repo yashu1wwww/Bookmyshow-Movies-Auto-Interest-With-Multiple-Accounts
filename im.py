@@ -1,19 +1,20 @@
-import undetected_chromedriver as uc
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.remote.webelement import WebElement
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
 import time
 import random
 
-#replace with your 18 dot mails of one gmails(dont use personal gmails) from below 18 and another 18 dot mails of another gmails here remaining all goes automatic process you only enter the otp in 11 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
+#replace with your 15 dot mails of one gmails and another 15 dot mails of another gmails here remaining all goes automatic process you only enter the otp in 11 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
 
-a=['yashwanth6677+nash@gmail.com']
+a=['ckqrjhfkmbf@wireconnected.com']
 b=['ya.s.hw.anth.6.6.77@gmail.com'] 
 c=['y.as.h.w.ant.h.6.677@gmail.com'] 
 d=['y.ash.wan.t.h6.677@gmail.com']
@@ -28,9 +29,7 @@ l=['yashwanth6677+gage@gmail.com']
 m=['yashwanth6677+max@gmail.com']
 n=['y.ash.w.ant.h.6.677@gmail.com']
 o=['yashwanth6677+lita@gmail.com']
-
-#here i added another id 18 dot mails
-
+#here i added another id dot mails
 p=['yashwanth6666+ginny@gmail.com']
 q=['yashwanth6666+timmy@gmail.com']
 r=['yashwanth6666+kent@gmail.com']
@@ -46,842 +45,1030 @@ bb=['yashwanth6666+evans@gmail.com']
 cc=['yashwanth6666+stan@gmail.com']
 dd=['yashwanth6666+kaye@gmail.com']
 
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078") #select the city in bms and copy the movie url and do same replacement of url in below also..
+option = webdriver.ChromeOptions()
+option.add_experimental_option("debuggerAddress","localhost:9222")
+
+driver = webdriver.Chrome(options=option)
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
 time.sleep(5)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys('nyjscmxbvwsn@bugfoo.com') 
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
-
-time.sleep(18)
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
 
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(b)) 
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
-
-time.sleep(18) 
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(c)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(d)) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
-
-time.sleep(18)
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(e)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(f)) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
-
-time.sleep(18) 
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(g)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(h)) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
-
-time.sleep(18) 
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(i)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(j)) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
-
-time.sleep(18) 
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(k)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(l)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(m)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(n)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(o)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078") 
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(p)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(q)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(r)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(s)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(t)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(u)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(v)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078") 
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(w)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(x)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(y)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(z)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(aa)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(bb)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(cc)) 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(2)
 
-time.sleep(18) 
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
-
-time.sleep(1)
-
-driver.close()
-
-driver = uc.Chrome(use_subprocess=True)
-wait = WebDriverWait(driver, 20)
-driver.get("https://in.bookmyshow.com/bengaluru/movies/agent/ET00310078")
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click()
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(dd)) 
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click()
+time.sleep(5)
 
-time.sleep(18)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click()
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
-time.sleep(1)
+time.sleep(2)
 
-driver.close()
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(20)
+
+
