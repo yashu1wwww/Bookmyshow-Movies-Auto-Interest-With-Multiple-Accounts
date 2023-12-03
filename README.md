@@ -4,21 +4,24 @@ Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
 ## I searched on Google but couldn't find it, so I created it. That's it.
 
-Replace the placeholder text with your own dot emails in the 'im.py' file. 
 
-(Add 15 dot emails from one Gmail account and another 15 from a different Gmail account. To create dot emails, enter your Gmail address and press the 'Generate' button.)
+https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
-## Replace the movie URL on line 51 with the one from the location you selected in BookMyShow and do same in below code also where url asked...
+Watch up to 3 minutes and 20 seconds, then open guest in that then,copy the script and saving it. Run the code with the necessary replacements..
 
- ## the entire process will be automated. You only need to enter the OTP within 18 seconds (use your mobile phone for faster entry of OTP).
+#replace with your dot mails in im.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use.
 
-To run the program, download the latest version of Chrome Driver from https://chromedriver.chromium.org/ and extract the file to a specific folder.
+Replace the URL of the movie you want..
+
+# You only need to enter the OTP within 15 seconds..
+
+# Note: After replacing the email and URL, the entire process will be automated."
 
 # 👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
 
-Open the command prompt in that folder and
+To run the program, download the latest version of Chrome Driver from https://chromedriver.chromium.org/
 
-## enter in cmd undetected_chromedriver
+and extract the file to a specific folder.
 
 ## enter im.py. Alternatively, you can rename the file and run it."
 
