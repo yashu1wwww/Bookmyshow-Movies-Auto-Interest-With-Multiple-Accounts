@@ -52,7 +52,7 @@ driver = webdriver.Chrome(options=option)
 
 time.sleep(2)
 
-driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+driver.get("https://in.bookmyshow.com") #select these text and press ctrl+h then ask find what and replace with movie url with city
 
 time.sleep(5)
 
@@ -1070,5 +1070,4 @@ time.sleep(2)
 driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
 
 time.sleep(20)
-
 
