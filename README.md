@@ -11,7 +11,7 @@ Watch up to 3 minutes and 20 seconds, then open guest in that then,copy the scri
 
 #replace with your dot mails in im.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use.
 
-Replace the URL of the movie you want..
+# Note: After replacing the emails or temp emails and url "https://in.bookmyshow.com" (select these text and press ctrl+h then ask find what and replace with movie url with city)
 
 # You only need to enter the OTP within 15 seconds..
 
