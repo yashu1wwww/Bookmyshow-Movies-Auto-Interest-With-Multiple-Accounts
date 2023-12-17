@@ -1071,3 +1071,16 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3
 
 time.sleep(20)
 
+#<𝙏𝙚𝙢𝙥 𝙈𝙖𝙞𝙡𝙨📧>
+
+# https://generator.email/
+
+# https://temp-mail.org/
+
+# https://mail.tm/en/
+
+# https://www.fakemail.net/
+
+# https://tempail.com/
+
+
