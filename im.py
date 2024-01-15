@@ -14,7 +14,7 @@ import random
 
 #replace with your 15 dot mails of one gmails and another 15 dot mails of another gmails here remaining all goes automatic process you only enter the otp in 11 seconds(use mobile for otp where fastly we can enter by seeing otp in mobile)....
 
-a=['mygmail+nash@gmail.com']
+a=['my@gmail.com']
 b=['mygmail@gmail.com'] 
 c=['my@gmail.com'] 
 d=['my@gmail.com']
@@ -61,15 +61,69 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(a)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
+
+time.sleep(15)#within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(a)) #email select
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(b)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+time.sleep(2)
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(c)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -95,15 +149,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(b)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(d)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -129,15 +179,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(c)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(e)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -163,15 +209,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(d)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(f)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -197,15 +239,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(e)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(g)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -231,15 +269,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(f)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(h)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -265,15 +299,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(g)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(i)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -299,15 +329,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(h)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(j)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -333,15 +359,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(i)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(k)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -367,15 +389,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(j)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(l)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -401,15 +419,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(k)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(m)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -435,15 +449,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(l)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(n)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -469,15 +479,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(m)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(o)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -503,15 +509,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(n)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(p)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -537,15 +539,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(o)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(q)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -571,15 +569,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(p)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(r)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -605,15 +599,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(q)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(s)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -639,15 +629,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(r)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(t)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -673,15 +659,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(s)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(u)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -707,15 +689,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(t)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(v)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -741,15 +719,40 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(w)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
+
+time.sleep(15) #within 15 second enter the otp..
+
+driver.maximize_window()
+
+driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(u)) #email select
+driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
+
+time.sleep(2)
+driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
+
+time.sleep(5)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(x)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -775,15 +778,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(v)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(y)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -809,48 +808,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(w)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
-
-time.sleep(15) #within 15 second enter the otp..
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
-
-time.sleep(2)
-driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
-
-time.sleep(5)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(x)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(z)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -876,15 +838,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(y)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(aa)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -910,15 +868,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(z)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(bb)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -944,15 +898,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(aa)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(cc)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -978,83 +928,11 @@ driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/d
 
 time.sleep(2)
 
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(bb)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
-
-time.sleep(15) #within 15 second enter the otp..
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
-
-time.sleep(2)
-
-driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
-
-time.sleep(5)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(cc)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
-
-time.sleep(15) #within 15 second enter the otp..
-
-driver.maximize_window()
-
-driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interest cofirm button..
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/header/div[1]/div/div/div/div[2]/div[2]').click() #click on human logo
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/div[2]/div/div[3]/button').click() #signout
-
-time.sleep(2)
-
-driver.get("https://in.bookmyshow.com") #first select the city then select the required movie url and replace here..
-
-time.sleep(5)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[2]/section[1]/div/div/div[2]/section/div[2]/div[2]/button/span').click() #click on i'm interested button
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #ask for email 
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="emailId"]').send_keys(random.choice(dd)) #email select
-
-time.sleep(2)
-
-driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/form/div[2]/button').click() #click on next button
+driver.find_element_by_xpath('//*[@id="super-container"]/div[3]/div/div/div/div[2]/div/div[1]/div/div[2]/div/div').click() #click on continue with email
+email=driver.find_element_by_css_selector('#emailId')
+email.send_keys(random.choice(dd)) #email select
+time.sleep(1)
+email.send_keys(Keys.ENTER) #next button
 
 time.sleep(15) #within 15 second enter the otp..
 
@@ -1083,5 +961,4 @@ time.sleep(20)
 # https://www.fakemail.net/
 
 # https://tempail.com/
-
 
