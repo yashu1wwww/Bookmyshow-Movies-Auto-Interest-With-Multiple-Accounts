@@ -67,7 +67,7 @@ email.send_keys(random.choice(a)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15)#within 15 second enter the otp..
+driver.implicitly_wait(15)#within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -97,7 +97,7 @@ email.send_keys(random.choice(b)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -125,7 +125,7 @@ email.send_keys(random.choice(c)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -155,7 +155,7 @@ email.send_keys(random.choice(d)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -185,7 +185,7 @@ email.send_keys(random.choice(e)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -215,7 +215,7 @@ email.send_keys(random.choice(f)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -245,7 +245,7 @@ email.send_keys(random.choice(g)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -275,7 +275,7 @@ email.send_keys(random.choice(h)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -305,7 +305,7 @@ email.send_keys(random.choice(i)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -335,7 +335,7 @@ email.send_keys(random.choice(j)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -365,7 +365,7 @@ email.send_keys(random.choice(k)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -395,7 +395,7 @@ email.send_keys(random.choice(l)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -425,7 +425,7 @@ email.send_keys(random.choice(m)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -455,7 +455,7 @@ email.send_keys(random.choice(n)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -485,7 +485,7 @@ email.send_keys(random.choice(o)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -515,7 +515,7 @@ email.send_keys(random.choice(p)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -545,7 +545,7 @@ email.send_keys(random.choice(q)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -575,7 +575,7 @@ email.send_keys(random.choice(r)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -605,7 +605,7 @@ email.send_keys(random.choice(s)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -635,7 +635,7 @@ email.send_keys(random.choice(t)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -665,7 +665,7 @@ email.send_keys(random.choice(u)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -695,7 +695,7 @@ email.send_keys(random.choice(v)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -725,7 +725,7 @@ email.send_keys(random.choice(w)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -754,7 +754,7 @@ email.send_keys(random.choice(x)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -784,7 +784,7 @@ email.send_keys(random.choice(y)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -814,7 +814,7 @@ email.send_keys(random.choice(z)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -844,7 +844,7 @@ email.send_keys(random.choice(aa)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -874,7 +874,7 @@ email.send_keys(random.choice(bb)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -904,7 +904,7 @@ email.send_keys(random.choice(cc)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -934,7 +934,7 @@ email.send_keys(random.choice(dd)) #email select
 time.sleep(1)
 email.send_keys(Keys.ENTER) #next button
 
-time.sleep(15) #within 15 second enter the otp..
+driver.implicitly_wait(15) #within 15 second enter the otp..
 
 driver.maximize_window()
 
@@ -961,4 +961,3 @@ time.sleep(20)
 # https://www.fakemail.net/
 
 # https://tempail.com/
-
