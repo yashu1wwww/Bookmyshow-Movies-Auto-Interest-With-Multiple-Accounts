@@ -22,7 +22,7 @@ and extract the file to a specific folder.
 
 ## enter im.py. Alternatively, you can rename the file and run it."
 
-# If you get blocked in Chrome, click on the settings button near the user profile icon, then click the plus mark to add another profile. Use that profile to run your Python code.
+# If you get blocked in Chrome, click on the settings button near the user profile icon, then click the plus mark to add another profile. Use that profile and run im.py or double click on that file..
 
 👉Note:-
 
