@@ -8,11 +8,15 @@ Watch up to 3 minutes and 20 seconds, then open guest in that then,copy the scri
 
 #replace with your dot mails in im.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use.
 
+
 # Note: After replacing the emails or temp emails and url "https://in.bookmyshow.com" (select these text and press ctrl+h then ask find what and replace with movie url with city)
 
-# You only need to enter the OTP within 15 seconds..
+# You only need to enter the OTP within 15 seconds(if need more seconds change)..
 
 # Note: After replacing the email and URL, the entire process will be automated."
+
+
+----------------------------------------------------------------------------------------------------
 
 # 👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
 
