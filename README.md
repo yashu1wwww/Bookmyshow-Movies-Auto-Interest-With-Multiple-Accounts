@@ -6,15 +6,13 @@ https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
 Watch up to 3 minutes and 20 seconds, then open guest in that then,copy the script and saving it. Run the code with the necessary replacements..
 
-#replace with your dot mails in im.py add 15 dot mails of one gmail and another 15 dot mails in another gmail use.
+# replace with your temp mails in 17th line or gmails(use dot gmail genrator)
 
+# replace with desired movie url in 32th line
 
-# Note: After replacing the emails or temp emails and url "https://in.bookmyshow.com" (select these text and press ctrl+h then ask find what and replace with movie url with city)
+# You only need to enter the OTP within 15 seconds(if need more seconds change in 50th line)..
 
-# You only need to enter the OTP within 15 seconds(if need more seconds change)..
-
-# Note: After replacing the email and URL, the entire process will be automated."
-
+# Note: After replacing the email and URL, the entire process will be automated(except otp entry)"
 
 ----------------------------------------------------------------------------------------------------
 
@@ -26,7 +24,7 @@ and extract the file to a specific folder.
 
 ## enter im.py. Alternatively, you can rename the file and run it."
 
-👉Note:-
+# 👉Note:-
 
 👉If you have the latest version of Selenium, the code may not run
 
