@@ -39,6 +39,7 @@ after enter im.py or double click on im.py
 
 # Note: After replacing the email and URL, the entire process will be automated(except otp entry)"
 
+👉 Note: If you get blocked, click on another profile in Chrome, add the profile, and run it there.
 ----------------------------------------------------------------------------------------------------
 
 # 👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
