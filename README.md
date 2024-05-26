@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
 Watch up to 3 minutes and 20 seconds, then 
 
-First, open Chrome file location and bypass the location restriction using an extension such as Touch VPN. In my case, the Chrome location(use start in: path) is
+First, open Chrome file location and the Chrome location(use start in: path) is
 
 C:\Users\Hp\AppData\Local\Google\Chrome\Application
 
@@ -28,7 +28,7 @@ then again open new terminal in that folder enter
 
 pip install selenium==4.2.0
 
-after enter s.py or double click on s.py
+after enter im.py or double click on im.py
 
 # replace with your temp mails in 17th line or gmails(use dot gmail genrator)
 
