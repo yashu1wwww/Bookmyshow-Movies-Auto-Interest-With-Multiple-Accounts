@@ -1,6 +1,7 @@
 Automate BookMyShow interests with multiple accounts using Selenium with Python.
 
-𝐈𝐟 𝐘𝐨𝐮 𝐅𝐚𝐧 𝐎𝐟 𝐓𝐡𝐚𝐭 𝐌𝐨𝐯𝐢𝐞 𝐀𝐧𝐝 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭(You can hit more interest add more emails) 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
+𝐈𝐟 𝐘𝐨𝐮 𝐅𝐚𝐧 𝐎𝐟 𝐓𝐡𝐚𝐭 𝐌𝐨𝐯𝐢𝐞 𝐀𝐧𝐝 𝐇𝐢𝐭 𝟑𝟎+ 𝐀𝐮𝐭𝐨 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐓𝐡𝐞𝐧 𝐇𝐞𝐫𝐞 𝐈𝐬 𝐓𝐡𝐞 𝐂𝐡𝐚𝐧𝐜𝐞 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐈𝐭 𝐅𝐚𝐬𝐭..
+# (If you want to hit still more interest add emails)
 
 https://www.youtube.com/watch?v=FVumnHy5Tzo&t=1s&ab_channel=HelloWorld
 
