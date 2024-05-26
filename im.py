@@ -47,7 +47,7 @@ def enter_email(email):
     email_input.send_keys(Keys.ENTER)
 
 def confirm_interest():
-    time.sleep(15)
+    time.sleep(15) #time for otp enter 
     driver.find_element(By.XPATH, "/html/body/div[1]/div[1]/div[2]/section[1]/div/div/div[2]/section/div[2]/div/button").click() #click on interest button
     time.sleep(2)
 
