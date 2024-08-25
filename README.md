@@ -38,8 +38,6 @@ after enter im.py or double click on im.py
 ## You only need to enter the OTP within 15 seconds(if need more seconds change in 50th line)..
 
 ## Note: After replacing the email and URL, the entire process will be automated(except otp entry)"
-
-👉 Note: If you get blocked, click on another profile in Chrome, add the profile, and run it there.
 ----------------------------------------------------------------------------------------------------
 
 ## 👉 Note:Every time Bms updates the code, it varies. So, fork the code if not work means...
